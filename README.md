@@ -3,55 +3,30 @@
 <h3 align="center">kak-wl-clipboard</h3>
 
   <p align="center">
-    `wl-clipboard` integration for Kakoune text editor
+    wl-clipboard integration for Kakoune text editor
     <br />
     <br />
-    <a href="https://github.com/postsolar/kak-wl-clipboard/issues">Report Bug</a>
+    <a href="https://github.com/postsolar/kak-wl-clipboard/issues">report a bug</a>
     ·
-    <a href="https://github.com/postsolar/kak-wl-clipboard/issues">Request Feature</a>
+    <a href="https://github.com/postsolar/kak-wl-clipboard/issues">request a feature</a>
   </p>
 </div>
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">Installation</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This plugin ships a script (written against Dash) which integrates Kakoune
-with [`wl-clipboard`](https://github.com/bugaevc/wl-clipboard) copy/paste utilities for Wayland.
+This plugin provides Kakoune integration with [`wl-clipboard`](https://github.com/bugaevc/wl-clipboard) copy/paste utilities for Wayland.
+It operates on all available registers, making it possible to copy a given Kakoune register to system or primary clipboard, or set a register to the value of system or primary clipboard.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
 
 ### Prerequisites
 
-Runtime dependencies include, obviously, `wl-copy` as well as some `coreutils`.
+Runtime dependencies include, obviously, `wl-copy` as well as some `coreutils`. The plugin relies on `/usr/bin/env sh` pointing to Dash or other compatible shell.
 
 ### Installation
 
@@ -96,11 +71,9 @@ For example, to set it up with Home Manager's `xdg.configFile` API:
 
 Simply clone the repo to whichever directory you prefer to keep your plugins in.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 For all the steps described below, you will likely want to add them to your kakrc.
@@ -185,29 +158,20 @@ map global replace b ":replace-with-clipboard<ret>" -docstring "Replace selectio
 This will give us access to a whole bunch of new commands. Naturally, you're free to pick only
 the ones you need, or define some other ones.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
-
-<!-- CONTACT -->
 ## Contact
 
 Author: [@postsolar](https://github.com/postsolar)
 
 Project Link: [https://github.com/postsolar/kak-wl-clipboard](https://github.com/postsolar/kak-wl-clipboard)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<p align="right"><a href="#readme-top">back to top</a></p>
