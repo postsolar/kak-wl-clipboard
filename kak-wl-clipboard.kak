@@ -30,7 +30,7 @@ define-command wl-paste-to-register -override -params .. -docstring '
     Switches:
       -register <name> Name of the register to use (e.g. `dquote`, `slash`, etc). See `:doc registers` for the list of names.
       -primary         Use ''primary'' (aka ''selection'') clipboard buffer instead of the ''system'' buffer. This gets passed to `wl-paste` as `--primary` flag.
-      -trim-newline    Do not append a newline character. This gets passed to `wl-copy` as `--no-newline` flag.
+      -trim-newline    Do not append a newline character. This gets passed to `wl-paste` as `--no-newline` flag.
       -silent          Don''t show an info message after setting the register.
   ' \
   %{

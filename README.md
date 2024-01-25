@@ -92,19 +92,19 @@ wl-copy-register
     A register must be specified.
     Switches:
       -register <name> Name of the register to use (e.g. `dquote`, `slash`, etc). See `:doc registers` for the list of names.
-      -join <sep>      Use separator <sep> to join selections. Use `-join ''''` to join without a separator.
-      -primary         Use ''primary'' (aka ''selection'') clipboard buffer instead of the ''system'' buffer. This gets passed to `wl-copy` as `--primary` flag.
+      -join <sep>      Use separator <sep> to join selections. Use `-join ''` to join without a separator.
+      -primary         Use 'primary' (aka 'selection') clipboard buffer instead of the 'system' buffer. This gets passed to `wl-copy` as `--primary` flag.
       -trim-newline    Trim trailing newline characters when copying. This gets passed to `wl-copy` as `--trim-newline` flag.
       -main-only       Copy only the main entry of a register, as opposed to all entries. For example, copy only the main selection, or only the main selection index.
-      -silent          Don''t show an info message after copying.
+      -silent          Don't show an info message after copying.
 
 wl-paste-to-register
   Fill a named register with the contents of system or primary clipboard.
     Switches:
       -register <name> Name of the register to use (e.g. `dquote`, `slash`, etc). See `:doc registers` for the list of names.
-      -primary         Use ''primary'' (aka ''selection'') clipboard buffer instead of the ''system'' buffer. This gets passed to `wl-paste` as `--primary` flag.
-      -trim-newline    Do not append a newline character. This gets passed to `wl-copy` as `--no-newline` flag.
-      -silent          Don''t show an info message after setting the register.
+      -primary         Use 'primary' (aka 'selection') clipboard buffer instead of the 'system' buffer. This gets passed to `wl-paste` as `--primary` flag.
+      -trim-newline    Do not append a newline character. This gets passed to `wl-paste` as `--no-newline` flag.
+      -silent          Don't show an info message after setting the register.
 ```
 
 Both of them are somewhat general and have a lot of options, so we'd like to define some small wrappers around them:
