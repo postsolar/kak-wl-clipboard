@@ -30,6 +30,10 @@ Runtime dependencies include, obviously, `wl-copy` as well as some `coreutils`. 
 
 ### Installation
 
+#### Manual installation
+
+Simply clone the repo to whichever directory you prefer to keep your plugins in.
+
 #### With Nix flakes
 
 Import the flake exported by this repo:
@@ -66,10 +70,6 @@ For example, to set it up with Home Manager's `xdg.configFile` API:
     inputs.kak-wl-clipboard.packages.${system}.kak-wl-clipboard
 }
 ```
-
-#### Manual installation
-
-Simply clone the repo to whichever directory you prefer to keep your plugins in.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
