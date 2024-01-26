@@ -26,7 +26,8 @@ It operates on all available registers, making it possible to copy a given Kakou
 
 ### Prerequisites
 
-Runtime dependencies include, obviously, `wl-copy` as well as some `coreutils`. The plugin relies on `/usr/bin/env sh` pointing to Dash or other compatible shell.
+Runtime dependencies include, obviously, `wl-clipboard` as well as some `coreutils` (namely, `sed` and `basename`).
+The plugin relies on `/usr/bin/env sh` pointing to Dash or other compatible shell.
 
 ### Installation
 
