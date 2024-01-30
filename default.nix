@@ -2,7 +2,7 @@
 
 stdenvNoCC.mkDerivation {
   pname = "kak-wl-clipboard";
-  version = "v0.1";
+  version = "v0.1.1";
   src = ./.;
   nativeBuildInputs = [ makeWrapper ];
   installPhase = ''
@@ -10,5 +10,13 @@ stdenvNoCC.mkDerivation {
       --prefix PATH : ${ lib.makeBinPath [ wl-clipboard ] }
     cp -- "$src/kak-wl-clipboard.kak" "$out/"
     '';
+
+  meta = with lib; {
+    description = "wl-clipboard integration for Kakoune text editor";
+    homepage = "https://github.com/postsolar/kak-wl-clipboard";
+    license = licenses.mit;
+    maintainers = with maintainers; [ postsolar ];
+    platforms = platforms.linux;
+  };
 }
 
